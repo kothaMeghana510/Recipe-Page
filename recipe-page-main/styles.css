@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color:  hsl(30, 54%, 90%);
+}
+
+.container{
+    margin: 50px auto;
+    width: 600px;
+    height: 100%vh;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    padding: 40px;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 20px;
+    font-family: Outfit;
+    color: hsl(30, 10%, 34%);
+}
+
+#image{
+    border-radius: 10px;
+}
+
+.content{
+    text-align: justify;
+    padding-top: 20px;
+}
+
+.content p{
+    margin: 20px auto;
+}
+
+.Preparation{
+    padding: 30px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+}
+.Preparation h3{
+    margin-bottom: 10px;
+    color: hsl(332, 51%, 32%);
+}
+.Preparation > ul > li{
+   padding: 10px;
+   padding-left: 15px;
+}
+
+.Ingredients{
+    margin: 30px;
+}
+h2{
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 10px;
+    font-family: Young Serif;
+}
+
+.Ingredients > ul > li{
+    padding: 5px;
+}
+
+.Instructions{
+    padding: 25px;
+}
+
+
+.Instructions > ol > li{
+    text-align: justify;
+    margin: 10px;
+}
+
+.Nutrition{
+    padding: 25px;
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr{
+    border-bottom: 1px solid grey;
+}
+
+td{
+    padding: 10px;
+}
+
+td:nth-child(2){
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+@media(max-width:500px){
+    html{
+        background-color: none;
+    }
+    .container{
+     width: 100%;
+     height: 100%vh;
+     font-family: Outfit;
+     color: hsl(30, 10%, 34%);
+     padding: 0;
+     margin: 0;
+    }
+    #image{
+       border-radius: 0;
+    }
+    .content{
+        text-align: justify;
+        padding-left: 20px;
+    }
+    .Preparation{
+        padding-left: 90px;
+    }
+    .Ingredients, .Instructions,.Nutrition{
+        padding: 30px;
+    }
+}
+
+.attribution{
+    margin-bottom: 20px;
+}
+
+
+/*
+White: hsl(0, 0%, 100%)
+
+- Stone 100: hsl(30, 54%, 90%)
+- Stone 150: hsl(30, 18%, 87%)
+- Stone 600: hsl(30, 10%, 34%)
+- Stone 900: hsl(24, 5%, 18%)
+
+- Brown 800: hsl(14, 45%, 36%)
+
+- Rose 800: hsl(332, 51%, 32%)
+- Rose 50: hsl(330, 100%, 98%)*/
